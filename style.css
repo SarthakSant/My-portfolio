@@ -347,6 +347,13 @@
             font-size: 6rem;
             color: white;
             margin: 0 auto;
+
+            background-image: url('cropped_circle_image3.png'); /* 👈 Add your image path here */
+            background-size: cover; /* This makes the image fill the circle without stretching */
+            background-position: center; /* This centers your photo inside the circle */
+            background-repeat: no-repeat;
+            border: 5px solid var(--primary-color); /* Optional: Adds a nice themed border */
+            box-shadow: var(--glow);
         }
 
         .about-text h3 {

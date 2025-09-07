@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarthak Sant - Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="light">
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    <div class="bg-animation"></div>
+
+    <header>
+        <nav>
+            <div class="logo">Sarthak Sant</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <button class="theme-toggle-nav" id="themeToggleNav">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 id="typing-text"></h1>
+            <div class="typing-cursor">|</div>
+            <p>Front-end Developer || Designer</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title fade-in">About Me</h2>
+            <div class="about-content">
+                <div class="about-image fade-in">
+                    <div class="profile-img float-animation">
+                      
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+                <div class="about-text fade-in">
+                    <h3>Computer Science Engineering Student</h3>
+                    <p>I'm a passionate Computer Science Engineering student at VIT Bhopal University with a strong foundation in full-stack development and cutting-edge technologies. I enjoy creating innovative solutions and exploring new tech frontiers.</p>
+                    <p>Currently maintaining a CGPA of 8.25, I'm actively involved in various projects ranging from modern web development to machine learning applications, always pushing the boundaries of what's possible.</p>
+                    
+                    <div class="skills-grid">
+                        <div class="skill-item fade-in">
+                            <i class="fab fa-js-square" style="font-size: 2rem; color: var(--accent-3);"></i>
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="skill-item fade-in">
+                            <i class="fab fa-react" style="font-size: 2rem; color: var(--secondary-color);"></i>
+                            <p>React.js</p>
+                        </div>
+                        <div class="skill-item fade-in">
+                            <i class="fab fa-java" style="font-size: 2rem; color: var(--accent-color);"></i>
+                            <p>Java</p>
+                        </div>
+                        <div class="skill-item fade-in">
+                            <i class="fas fa-database" style="font-size: 2rem; color: var(--accent-2);"></i>
+                            <p>Database</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title fade-in">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <h3>SynQ - QR Ticketing System</h3>
+                    <p>Developed a comprehensive QR-based ticketing system for college events and clubs, enhancing efficiency and security in event management with real-time validation and seamless user experience.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Python</span>
+                    </div>
+                </div>
+                
+                <div class="project-card fade-in">
+                    <h3>Parkinson's Disease Prediction</h3>
+                    <p>Built an advanced machine learning model using medical data to predict Parkinson's disease likelihood with 90% accuracy. Implemented sophisticated feature engineering and model optimization techniques.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">NumPy</span>
+                    </div>
+                </div>
+                
+                <div class="project-card fade-in">
+                    <h3>RuralConnect WorkKutumbh</h3>
+                    <p>Developed a full-stack web platform connecting rural users with job opportunities, NGOs, and government schemes. Features modern UI/UX, JWT authentication, and responsive design for maximum accessibility.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React.js</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">JWT</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Games Section -->
+    <section id="games">
+        <div class="container">
+            <h2 class="section-title fade-in">Play Zone </h2>
+            <p class="games-subtitle fade-in">Under Construction</p>
+            
+            <div class="games-grid">
+                <div class="game-card fade-in">
+                    <div class="game-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Space Doodler</h3>
+                    <p>Jump through space avoiding obstacles and collecting stars!</p>
+                    <button class="game-btn" onclick="openGame('doodler')">Play Now</button>
+                </div>
+
+                <div class="game-card fade-in">
+                    <div class="game-icon">
+                        <i class="fas fa-baseball-ball"></i>
+                    </div>
+                    <h3>Mini Cricket</h3>
+                    <p>Hit the ball and score runs in this cricket challenge!</p>
+                    <button class="game-btn" onclick="openGame('cricket')">Play Now</button>
+                </div>
+
+                <div class="game-card fade-in">
+                    <div class="game-icon">
+                        <i class="fas fa-golf-ball"></i>
+                    </div>
+                    <h3>Pixel Golf</h3>
+                    <p>Get the ball in the hole with perfect timing!</p>
+                    <button class="game-btn" onclick="openGame('golf')">Play Now</button>
+                </div>
+
+                <div class="game-card fade-in">
+                    <div class="game-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Snake Remix</h3>
+                    <p>Classic snake game with a modern twist!</p>
+                    <button class="game-btn" onclick="openGame('snake')">Play Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Modal -->
+    <div id="gameModal" class="game-modal">
+        <div class="game-modal-content">
+            <div class="game-header">
+                <h3 id="gameTitle">Play</h3>
+                <button class="close-game" onclick="closeGame()">&times;</button>
+            </div>
+            <div class="game-container" id="gameContainer">
+                <canvas id="gameCanvas" width="400" height="600"></canvas>
+                <div class="game-controls">
+                    <div id="gameScore">Score: 0</div>
+                    <div id="gameInstructions"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title fade-in">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info fade-in">
+                    <h3>Let's Connect!</h3>
+                    <p>I'm always open to discussing new opportunities, collaborations, or just having a chat about the latest in technology and innovation.</p>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>sarthaksant2004@gmail.com</span>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 9822766484</span>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Bhopal, India</span>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/SarthakSant" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/sarthaksant" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:sarthaksant2004@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form fade-in">
+                    <h3>Send a Message</h3>
+                    <!-- Form Status Messages -->
+                    <div id="form-status" style="display: none; padding: 1rem; border-radius: 8px; margin-bottom: 1rem;"></div>
+                    
+                    <!-- Formspree Form -->
+                    <form id="contact-form" action="https://formspree.io/f/mwpnaovj" method="POST">
+                        <div style="margin-bottom: 1rem;">
+                            <input type="text" name="name" id="form-name" placeholder="Your Name" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 8px; background: var(--bg-primary); color: var(--text-primary); transition: all 0.3s ease;">
+                        </div>
+                        <div style="margin-bottom: 1rem;">
+                            <input type="email" name="_replyto" id="form-email" placeholder="Your Email" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 8px; background: var(--bg-primary); color: var(--text-primary); transition: all 0.3s ease;">
+                        </div>
+                        
+                        <div style="margin-bottom: 1rem;">
+                            <textarea name="message" id="form-message" placeholder="Your Message" rows="5" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 8px; background: var(--bg-primary); color: var(--text-primary); resize: vertical; transition: all 0.3s ease;"></textarea>
+                        </div>
+                        
+                        <!-- Hidden fields for spam protection -->
+                        <input type="text" name="_gotcha" style="display:none" />
+                        <input type="hidden" name="_next" value="#contact" />
+                        
+                        <button type="submit" id="submit-btn" class="btn btn-primary" style="width: 100%; position: relative;">
+                            <span id="btn-text">Send Message</span>
+                            <span id="btn-spinner" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i> Sending...
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Sarthak Sant. Crafted with passion and innovation.</p>
+        </div>
+    </footer>
+
+    <!-- Chatbot Widget -->
+    <div id="floating-chatbot">
+        <div id="floating-messages">
+            <div class="floating-message" id="msg-1">
+                <div class="message-bubble-modern">
+                    <span class="message-text-modern">Hey! I'm SamBot, here to help you if you have any questions about Sarthak!</span>
+                </div>
+            </div>
+            <div class="floating-message" id="msg-2" style="display: none;">
+                <div class="message-bubble-modern">
+                    <span class="message-text-modern">Would you like to hire Sarthak..?</span>
+                    <div class="message-buttons-modern">
+                        <button class="choice-btn-modern yes-btn" data-choice="yes">Yes, we would!</button>
+                        <button class="choice-btn-modern no-btn" data-choice="no">No, we're good</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="chat-widget-icon" class="chat-icon-wrapper">
+            <div class="chat-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h4l4 4 4-4h4c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/>
+                </svg>
+            </div>
+            <div class="online-indicator"></div>
+        </div>
+
+        <div id="enhanced-chat-window" class="hidden">
+            <div class="chat-header-modern">
+                <div class="bot-info-modern">
+                    <div class="bot-avatar-modern"></div>
+                    <div>
+                        <h4>SamBot</h4>
+                        <span class="status-modern">Online</span>
+                    </div>
+                </div>
+                <button id="close-chat">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="chat-body-modern" id="enhanced-chat-body">
+                <div class="bot-msg-modern">
+                    <div class="message-content-modern">
+                        <div class="bot-avatar-small"></div>
+                        <div class="bubble-modern">
+                            <p>Welcome! I'm here to help you learn about Sarthak Sant.</p>
+                            <div class="quick-options-modern">
+                                <button class="quick-btn-modern" data-query="skills">Skills</button>
+                                <button class="quick-btn-modern" data-query="projects">Projects</button>
+                                <button class="quick-btn-modern" data-query="contact">Contact</button>
+                                <button class="quick-btn-modern" data-query="experience">Experience</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="enhanced-chat-input-modern">
+                <input type="text" id="enhanced-user-input" placeholder="Ask me anything about Sarthak..." />
+                <button id="enhanced-send-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Form handling script
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('contact-form');
+            const formStatus = document.getElementById('form-status');
+            const submitBtn = document.getElementById('submit-btn');
+            const btnText = document.getElementById('btn-text');
+            const btnSpinner = document.getElementById('btn-spinner');
+
+            form.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                
+                // Show loading state
+                submitBtn.disabled = true;
+                btnText.style.display = 'none';
+                btnSpinner.style.display = 'inline-block';
+                
+                try {
+                    const formData = new FormData(form);
+                    const response = await fetch(form.action, {
+                        method: 'POST',
+                        body: formData,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    });
+
+                    if (response.ok) {
+                        // Success
+                        
+                        
+                        // Reset form
+                        form.reset();
+                        
+                        // Hide success message after 5 seconds
+                        setTimeout(() => {
+                            formStatus.style.display = 'none';
+                        }, 5000);
+                    } else {
+                        throw new Error('Form submission failed');
+                    }
+                } catch (error) {
+                    // Error
+                    formStatus.style.display = 'block';
+                    formStatus.style.backgroundColor = '#f8d7da';
+                    formStatus.style.borderColor = '#f5c6cb';
+                    formStatus.style.color = '#721c24';
+                    formStatus.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Oops! There was a problem sending your message. Please try again.';
+                    
+                    // Hide error message after 5 seconds
+                    setTimeout(() => {
+                        formStatus.style.display = 'none';
+                    }, 5000);
+                } finally {
+                    // Reset button state
+                    submitBtn.disabled = false;
+                    btnText.style.display = 'inline-block';
+                    btnSpinner.style.display = 'none';
+                }
+            });
+
+            // Input focus effects
+            const inputs = form.querySelectorAll('input, textarea');
+            inputs.forEach(input => {
+                input.addEventListener('focus', function() {
+                    this.style.borderColor = 'var(--primary-color)';
+                    this.style.boxShadow = '0 0 0 2px rgba(74, 144, 226, 0.1)';
+                });
+
+                input.addEventListener('blur', function() {
+                    this.style.borderColor = 'var(--border-color)';
+                    this.style.boxShadow = 'none';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
